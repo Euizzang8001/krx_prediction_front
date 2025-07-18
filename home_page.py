@@ -51,7 +51,7 @@ if krx_prediction_data:
         "항목": ["종가", "예측 종가 변화율", "예측 종가"],
         "값": [
             str(round(krx_prediction_data.get("closing"),2)) + "원",
-            str(round(krx_prediction_data.get("predicted_closing_ratio") * 100,2)) + "%",
+            str(round(krx_prediction_data.get("predicted_closing_ratio"),2)) + "%",
             str(round(krx_prediction_data.get("predicted_closing"), 2)) + "원"
         ]
     }
